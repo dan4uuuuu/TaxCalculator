@@ -34,7 +34,6 @@ namespace TaxCalculator.Helpers
             }
 
             result.Net = result.Gross - result.Fees;
-
             return result;
         }
 
