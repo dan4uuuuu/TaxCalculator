@@ -9,6 +9,6 @@ namespace TaxCalculator.Logic.Interface
 {
     public interface ICalculateTaxes
     {
-        Salary Calculate(double salary);
+        SalaryModel Calculate(double salary);
     }
 }

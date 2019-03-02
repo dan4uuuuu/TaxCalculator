@@ -43,11 +43,12 @@
     <Compile Include="Enums\TaxCriteriasEnum.cs" />
     <Compile Include="Enums\TaxRangeEnum.cs" />
     <Compile Include="Interface\ICalculateTaxes.cs" />
-    <Compile Include="Models\Salary.cs" />
+    <Compile Include="Models\SalaryModel.cs" />
+    <Compile Include="Models\TaxParameters.cs" />
     <Compile Include="Models\TaxCalculationCriteria.cs" />
     <Compile Include="Models\TaxRange.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SalaryReceipt.cs" />
+    <Compile Include="EmployeeTaxes.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

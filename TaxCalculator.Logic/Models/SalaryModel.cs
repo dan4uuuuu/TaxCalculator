@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TaxCalculator.Logic.Models
 {
-    public class Salary
+    public class SalaryModel
     {
-        public Salary()
+        public SalaryModel()
         {
 
         }
