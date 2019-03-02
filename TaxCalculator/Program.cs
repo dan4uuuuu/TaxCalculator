@@ -1,5 +1,5 @@
 ﻿using System;
-using TaxCalculator.Helpers;
+using TaxCalculator.Logic;
 using TaxCalculator.Logic.Models;
 
 namespace ConsoleApp3
@@ -8,7 +8,6 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-
             CalculateSalary();
             Console.WriteLine("Press any key to exit!");
             Console.ReadLine();
@@ -18,14 +17,15 @@ namespace ConsoleApp3
         {
             double input = 0.0;
             SalaryModel salary = new SalaryModel();
-            EmployeeTaxes taxes = new EmployeeTaxes();
+            var fees = new SalaryFees();
+
             string choice = "y";
 
             do
             {
                 Console.WriteLine("Please input salary");
                 Double.TryParse(Console.ReadLine(), out input);
-                salary = taxes.Calculate(input);
+                salary = fees.Calculate(input);
                 Console.WriteLine("Salary:\n\tGross: {0}\n\tFees: {1}\n\tNet: {2}", salary.Gross, salary.Fees, salary.Net);
                 Console.WriteLine("Would you like to calculate another? (Y/N)");
                 choice = Console.ReadLine();

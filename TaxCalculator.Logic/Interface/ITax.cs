@@ -7,8 +7,8 @@ using TaxCalculator.Logic.Models;
 
 namespace TaxCalculator.Logic.Interface
 {
-    public interface ICalculateTaxes
+    public interface ITax
     {
-        SalaryModel Calculate(double salary);
+        List<Taxes> ApplicableTaxes { get; set; }
     }
 }
