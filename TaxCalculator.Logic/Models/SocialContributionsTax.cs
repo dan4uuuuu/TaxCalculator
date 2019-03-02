@@ -7,6 +7,9 @@ using TaxCalculator.Logic.Interface;
 
 namespace TaxCalculator.Logic.Models
 {
+    /// <summary>
+    /// Social contributions class.
+    /// </summary>
     public class SocialContributionsTax : ICalculateTax
     {
         private TaxParameters _parameters = new TaxParameters();

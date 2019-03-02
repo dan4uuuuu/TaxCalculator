@@ -11,6 +11,11 @@ namespace TaxCalculator.Logic
 {
     public class SalaryFees
     {
+        /// <summary>
+        /// Calcuates all fees.
+        /// </summary>
+        /// <param name="salary"></param>
+        /// <returns>Salary object</returns>
         public SalaryModel Calculate(double salary)
         {
             SalaryModel result = new SalaryModel();

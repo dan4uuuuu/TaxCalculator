@@ -7,6 +7,9 @@ using TaxCalculator.Logic.Models;
 
 namespace TaxCalculator.Logic.Interface
 {
+    /// <summary>
+    /// Calculate concrete tax.
+    /// </summary>
     public interface ICalculateTax
     {
         double Calculate(double salary);

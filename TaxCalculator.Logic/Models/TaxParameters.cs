@@ -7,6 +7,9 @@ using TaxCalculator.Logic.Enums;
 
 namespace TaxCalculator.Logic.Models
 {
+    /// <summary>
+    /// Tax parameters class
+    /// </summary>
     public class TaxParameters
     {
         private double _incomeTaxFee;

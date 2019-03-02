@@ -7,6 +7,9 @@ using TaxCalculator.Logic.Enums;
 
 namespace TaxCalculator.Logic.Models
 {
+    /// <summary>
+    /// Ranges by which the tax fees are applied.
+    /// </summary>
     public static class TaxRange
     {
 

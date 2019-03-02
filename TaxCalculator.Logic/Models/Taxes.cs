@@ -7,6 +7,9 @@ using TaxCalculator.Logic.Interface;
 
 namespace TaxCalculator.Logic.Models
 {
+    /// <summary>
+    /// Tax list model
+    /// </summary>
     public class Taxes : ITax
     {
         private static List<Taxes> _ApplicableTaxes = new List<Taxes>()

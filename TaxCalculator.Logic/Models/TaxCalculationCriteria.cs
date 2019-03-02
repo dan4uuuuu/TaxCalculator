@@ -3,6 +3,9 @@ using TaxCalculator.Logic.Enums;
 
 namespace TaxCalculator.Logic.Models
 {
+    /// <summary>
+    /// Criteria percentages by which all fees are being calculated
+    /// </summary>
     public static class TaxCalculationCriteria
     {
         private static Dictionary<string, double> _Rules = new Dictionary<string, double>()
