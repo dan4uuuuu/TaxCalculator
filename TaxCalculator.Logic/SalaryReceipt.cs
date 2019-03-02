@@ -5,9 +5,9 @@ using TaxCalculator.Logic.Models;
 
 namespace TaxCalculator.Helpers
 {
-    public class Tax : ICalculateTaxes
+    public class SalaryReceipt : ICalculateTaxes
     {
-        public Tax()
+        public SalaryReceipt()
         {
 
         }
@@ -26,6 +26,7 @@ namespace TaxCalculator.Helpers
             range.TryGetValue(TaxRangeEnum.Highest.ToString(), out highestTaxValue);
             criteria.TryGetValue(TaxCriteriasEnum.IncomeTax.ToString(), out incomeTaxFee);
             criteria.TryGetValue(TaxCriteriasEnum.SocialContributions.ToString(), out socialContributionsFee);
+
 
             if (salary > lowestTaxValue)
             {

@@ -13,8 +13,8 @@ namespace ConsoleApp3
         {
             var input = 0.0;
             Double.TryParse(Console.ReadLine(), out input);
-            var tax = new Tax();
-            var result = tax.Calculate(input);
+            var receipt = new SalaryReceipt();
+            var result = receipt.Calculate(input);
 
             Console.ReadLine();
         }
